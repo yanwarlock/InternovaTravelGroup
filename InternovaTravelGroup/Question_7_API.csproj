@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <DocumentationFile>Question_7_API.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

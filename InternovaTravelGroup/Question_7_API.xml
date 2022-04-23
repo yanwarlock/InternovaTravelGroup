@@ -1,3 +1,40 @@
 <?xml version="1.0"?>
 <doc>
+    <assembly>
+        <name>Question_7_API</name>
+    </assembly>
+    <members>
+        <member name="T:Question_7_API.Controllers.FlightController">
+            <summary>
+            FlightController
+            </summary>
+        </member>
+        <member name="M:Question_7_API.Controllers.FlightController.Post(Question_7_API.Models.Flight.FlightRequest)">
+            <summary>
+            Create a new flight.
+            </summary>
+            <param name="request">Flight to be created.</param>
+            <returns>Returns the flight created</returns>
+        </member>
+        <member name="M:Question_7_API.Controllers.FlightController.Get(System.String)">
+            <summary>
+            Get a given flight its identifier
+            </summary>
+            <param name="request">Flight indentifier</param>
+            <returns>Returns a flight</returns>
+        </member>
+        <member name="M:Question_7_API.Controllers.FlightController.Get">
+            <summary>
+            Get all flights
+            </summary>
+            <returns>Returns a collection of flights</returns>
+        </member>
+        <member name="M:Question_7_API.Controllers.FlightController.Delete(System.String)">
+            <summary>
+            Delete a flight
+            </summary>
+            <param name="request">Flight identifier</param>
+            <returns>Returns true or false</returns>
+        </member>
+    </members>
 </doc>

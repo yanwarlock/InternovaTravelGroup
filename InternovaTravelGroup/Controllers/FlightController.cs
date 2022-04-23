@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace Question_7_API.Controllers
 {
+    /// <summary>
+    /// FlightController
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     public class FlightController : ControllerBase
