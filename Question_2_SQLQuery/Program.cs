@@ -29,39 +29,60 @@ namespace Question_2_SQLQuery
             };
 
             var result = (from flight in tableFlight
-                          join flightType in tableFlightType
-                          on flight.FlightTypeID equals flightType.FlightTypeID
-                          into mealType
-                          from flightType in mealType.DefaultIfEmpty()
-
+                          join flightType in tableFlightType on flight.FlightTypeID equals flightType.FlightTypeID
+                          join mealType in tableMealType on flight.MealTypeID equals mealType.MealTypeID into flightMealType
+                          from subMealType in flightMealType.DefaultIfEmpty()
                           select new
                           {
                               FlightID = flight.FlightID,
                               PassengerName = flight.PassengerName,
                               FlightNumber = flight.FlightNumber,
                               FlightType = flightType.Type,
-                              MealType = mealType.ToList().First().Type,
-                          }); ;
+                              MealType = subMealType?.Type ?? "Not Specified"
+                          });
+
+
+            var columns = new[]
+            {
+                "FlightID",
+                "PassengerName",
+                "FlightNumber",
+                "FlightType",
+                "MealType"
+            };
+            const int columnSize = 15;
+            foreach (var c in columns)
+                Console.Write(c.PadRight(columnSize));
+            Console.WriteLine();
+
+            foreach (var c in columns)
+                Console.Write("".PadRight(columnSize, '='));
+            Console.WriteLine();
 
             foreach (var item in result)
             {
-                Console.WriteLine($"FlightID :{ item.FlightID} - PassengerName :{item.PassengerName} - " +
-                    $"FlightNumber :{item.FlightNumber} - FlightType :{item.FlightType} - MealType :{item.MealType}");
+                Console.Write($"{item.FlightID}".PadRight(columnSize));
+                Console.Write(item.PassengerName.PadRight(columnSize));
+                Console.Write(item.FlightNumber.PadRight(columnSize));
+                Console.Write(item.FlightType.PadRight(columnSize));
+                Console.Write(item.MealType.PadRight(columnSize));
+                Console.WriteLine();
             }
-
-
         }
     }
-    public class FlightType 
+
+    public class FlightType
     {
         public int FlightTypeID { get; set; }
         public string Type { get; set; }
     }
+
     public class MealType
     {
-        public int MealTypeID { get;  set; }
+        public int MealTypeID { get; set; }
         public string Type { get; set; }
     }
+
     public class Flight
     {
         public int FlightID { get; set; }

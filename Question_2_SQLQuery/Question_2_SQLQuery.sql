@@ -7,7 +7,7 @@ INSERT INTO @FlightType ([FlightTypeID], [Type])
 VALUES (1, 'One Way');
 INSERT INTO @FlightType ([FlightTypeID], [Type])
 VALUES (2, 'Round Trip');
---------------------------------------------------
+--------------------------------------------------------------------------------------------
 DECLARE @MealType AS TABLE 
 (
  [MealTypeID] INT NOT NULL PRIMARY KEY,
@@ -19,7 +19,7 @@ INSERT INTO @MealType ([MealTypeID], [Type])
 VALUES (2, 'Beef');
 INSERT INTO @MealType ([MealTypeID], [Type])
 VALUES (3, 'Vegetarian');
-----------------------------------------------------
+-------------------------------------------------------------------------------------------
 DECLARE @Flight AS TABLE 
 (
  [FlightID] INT NOT NULL PRIMARY KEY,
@@ -38,7 +38,12 @@ INSERT INTO @Flight ([FlightID], [FlightTypeID],[MealTypeID],[PassengerName],[Fl
 VALUES (4,2,3,'Paul','AC99');
 ---------------------------------------------------------------------------------------------
 
-SELECT [flight].[FlightID] , [flight].[PassengerName],[flight].[FlightNumber],[flightType].[Type] AS FlightType,ISNULL([mealType].[Type], 'Not Specified') AS MealType FROM @Flight flight
+SELECT [flight].[FlightID] , 
+[flight].[PassengerName],
+[flight].[FlightNumber],
+[flightType].[Type] AS FlightType,
+ISNULL([mealType].[Type], 'Not Specified') AS MealType 
+FROM @Flight flight
 INNER JOIN @FlightType flightType ON flight.FlightTypeID = flightType.FlightTypeID
 LEFT JOIN @MealType mealType ON flight.MealTypeID = mealType.MealTypeID
 
