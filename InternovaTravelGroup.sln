@@ -3,23 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Question_7_API", "InternovaTravelGroup\Question_7_API.csproj", "{798BE06B-9035-4FB4-A479-93F6C8B0C8E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Question_7_API", "InternovaTravelGroup\Question_7_API.csproj", "{798BE06B-9035-4FB4-A479-93F6C8B0C8E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Question_1_WompRat", "Question_1_WompRat\Question_1_WompRat.csproj", "{AEC22D20-4C7D-4A3A-9B52-8D279AF8E727}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Question_1_WompRat", "Question_1_WompRat\Question_1_WompRat.csproj", "{AEC22D20-4C7D-4A3A-9B52-8D279AF8E727}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Question_1_WompRatThread", "Question_1_WompRatThread\Question_1_WompRatThread.csproj", "{815B6145-50BD-4676-8396-14C59A9166BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Question_1_WompRatThread", "Question_1_WompRatThread\Question_1_WompRatThread.csproj", "{815B6145-50BD-4676-8396-14C59A9166BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Question_2_SQLQuery", "Question_2_SQLQuery\Question_2_SQLQuery.csproj", "{651E066C-D15D-437D-9A36-83CAC3463F8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Question_2_SQLQuery", "Question_2_SQLQuery\Question_2_SQLQuery.csproj", "{651E066C-D15D-437D-9A36-83CAC3463F8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Question_3_CustomHashSet", "Question_3_CustomHashSet\Question_3_CustomHashSet.csproj", "{01FE72CA-C110-4755-BD96-A056A1E0D4A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Question_3_CustomHashSet", "Question_3_CustomHashSet\Question_3_CustomHashSet.csproj", "{01FE72CA-C110-4755-BD96-A056A1E0D4A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Question_4", "Question_4\Question_4.csproj", "{D2F48312-8017-42FB-BF19-1933E3E41C4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Question_4", "Question_4\Question_4.csproj", "{D2F48312-8017-42FB-BF19-1933E3E41C4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Question_5_Settings", "Question_5_Settings\Question_5_Settings.csproj", "{1610E42D-56D3-4EB9-94BA-83DD57E8B4A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Question_5_Settings", "Question_5_Settings\Question_5_Settings.csproj", "{1610E42D-56D3-4EB9-94BA-83DD57E8B4A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Question_6_AzureFunctions", "Question_6_AzureFunctions\Question_6_AzureFunctions.csproj", "{6BE43465-FAA8-46FE-AE38-3C69428076FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Question_7_API.xUnitTest", "Question_7_API.xUnitTest\Question_7_API.xUnitTest.csproj", "{1E09D5A9-4B2C-4000-8CCD-196D6332362E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Question_7_API.xUnitTest", "Question_7_API.xUnitTest\Question_7_API.xUnitTest.csproj", "{1E09D5A9-4B2C-4000-8CCD-196D6332362E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Question_6", "Question_6\Question_6.csproj", "{28D2DCD7-3C0B-4E0B-9524-87C18966EA1E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,14 +55,14 @@ Global
 		{1610E42D-56D3-4EB9-94BA-83DD57E8B4A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1610E42D-56D3-4EB9-94BA-83DD57E8B4A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1610E42D-56D3-4EB9-94BA-83DD57E8B4A2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6BE43465-FAA8-46FE-AE38-3C69428076FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6BE43465-FAA8-46FE-AE38-3C69428076FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6BE43465-FAA8-46FE-AE38-3C69428076FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6BE43465-FAA8-46FE-AE38-3C69428076FC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1E09D5A9-4B2C-4000-8CCD-196D6332362E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1E09D5A9-4B2C-4000-8CCD-196D6332362E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E09D5A9-4B2C-4000-8CCD-196D6332362E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E09D5A9-4B2C-4000-8CCD-196D6332362E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28D2DCD7-3C0B-4E0B-9524-87C18966EA1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28D2DCD7-3C0B-4E0B-9524-87C18966EA1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28D2DCD7-3C0B-4E0B-9524-87C18966EA1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28D2DCD7-3C0B-4E0B-9524-87C18966EA1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

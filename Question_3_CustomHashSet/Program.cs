@@ -10,6 +10,7 @@ namespace Question_3_CustomHashSet
     {
         static void Main(string[] args)
         {
+            Console.WriteLine($"Question_3");
             var hashTable = new CustomHashSet<Person>();
             var personReferences = new Person("Pepe");
             Console.WriteLine(hashTable.Add(personReferences));

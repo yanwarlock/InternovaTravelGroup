@@ -9,6 +9,7 @@ namespace Question_2_SQLQuery
 
         static void Main(string[] args)
         {
+            Console.WriteLine($"Question_2");
             var tableFlightType = new List<FlightType>()
             {
                 new FlightType(){  FlightTypeID =1,  Type = "One Way", },

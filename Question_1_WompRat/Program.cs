@@ -6,6 +6,7 @@ namespace Question_1_WompRat
     {
         static void Main(string[] args)
         {
+            Console.WriteLine($"Question_1");
             for (int i = 1; i <= 500; i++)
             {
                 if (i % 5 == 0 && i % 7 == 0)

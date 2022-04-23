@@ -11,6 +11,7 @@ namespace Question_1_WompRatThread
     {
         public static async Task Main(string[] args)
         {
+            Console.WriteLine($"Question_1b");
             var dictionary = new SortedDictionary<int, string>();
             var semaphore = new Semaphore(1, 1);
             var taskList = new List<Task>();
