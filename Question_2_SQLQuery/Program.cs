@@ -9,7 +9,7 @@ namespace Question_2_SQLQuery
 
         static void Main(string[] args)
         {
-            var tableFlightTypeID = new List<FlightType>()
+            var tableFlightType = new List<FlightType>()
             {
                 new FlightType(){  FlightTypeID =1,  Type = "One Way", },
                 new FlightType() {  FlightTypeID =2, Type = "Round Trip",}
@@ -29,18 +29,19 @@ namespace Question_2_SQLQuery
             };
 
             var result = (from flight in tableFlight
-                     join flightTypeID in tableFlightTypeID on
-                     flight.FlightTypeID equals flightTypeID.FlightTypeID
-                     join mealType in tableMealType on
-                     flight.MealTypeID equals mealType.MealTypeID
-                     select new
-                     {
-                         FlightID = flight.FlightID,
-                         PassengerName = flight.PassengerName,
-                         FlightNumber = flight.FlightNumber,
-                         FlightType = flightTypeID.Type,
-                         MealType = mealType.Type,
-                     });
+                          join flightType in tableFlightType
+                          on flight.FlightTypeID equals flightType.FlightTypeID
+                          into mealType
+                          from flightType in mealType.DefaultIfEmpty()
+
+                          select new
+                          {
+                              FlightID = flight.FlightID,
+                              PassengerName = flight.PassengerName,
+                              FlightNumber = flight.FlightNumber,
+                              FlightType = flightType.Type,
+                              MealType = mealType.ToList().First().Type,
+                          }); ;
 
             foreach (var item in result)
             {
