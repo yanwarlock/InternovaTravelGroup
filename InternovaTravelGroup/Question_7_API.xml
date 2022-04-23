@@ -9,6 +9,12 @@
             FlightController
             </summary>
         </member>
+        <member name="M:Question_7_API.Controllers.FlightController.#ctor(Question_7_API.Services.FlightService)">
+            <summary>
+            
+            </summary>
+            <param name="flightService"></param>
+        </member>
         <member name="M:Question_7_API.Controllers.FlightController.Post(Question_7_API.Models.Flight.FlightRequest)">
             <summary>
             Create a new flight.
@@ -35,6 +41,71 @@
             </summary>
             <param name="request">Flight identifier</param>
             <returns>Returns true or false</returns>
+        </member>
+        <member name="T:Question_7_API.Models.Flight.FlightModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Question_7_API.Models.Flight.FlightModel.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Question_7_API.Models.Flight.FlightModel.FlightID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Question_7_API.Models.Flight.FlightModel.FlightTypeID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Question_7_API.Models.Flight.FlightModel.MealTypeID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Question_7_API.Models.Flight.FlightModel.PassengerName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Question_7_API.Models.Flight.FlightModel.FlightNumber">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Question_7_API.Models.Flight.FlightRequest">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Question_7_API.Models.Flight.FlightRequest.FlightID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Question_7_API.Models.Flight.FlightRequest.FlightTypeID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Question_7_API.Models.Flight.FlightRequest.MealTypeID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Question_7_API.Models.Flight.FlightRequest.PassengerName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Question_7_API.Models.Flight.FlightRequest.FlightNumber">
+            <summary>
+            
+            </summary>
         </member>
     </members>
 </doc>

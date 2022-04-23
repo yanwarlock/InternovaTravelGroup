@@ -16,6 +16,10 @@ namespace Question_7_API.Controllers
     public class FlightController : ControllerBase
     {
         private readonly IFlightService _flightService;
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="flightService"></param>
         public FlightController(FlightService flightService)
         {
             _flightService = flightService;
